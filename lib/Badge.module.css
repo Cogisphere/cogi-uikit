@@ -2,5 +2,10 @@
 {
     display:    inline-block;
     background: black;
-    padding:    .5rem;
+    padding:    .10rem .25rem;
+    padding-bottom:     .2rem;
+    padding-right:      .5rem;
+    clip-path:          polygon(0% 0%, 100% 0%, 100% calc(100% - .35rem), calc(100% - .35rem) 100%, 0% 100%);
+    color:      white;
+    font-weight: bold;
 }
