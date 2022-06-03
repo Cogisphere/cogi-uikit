@@ -1,0 +1,31 @@
+h1.cogi-uikit-header,
+h2.cogi-uikit-header
+{
+    background-color:   var(--cogi-uikit-color-dark);
+    color:              white;
+    clip-path:          polygon(0% 0%, 100% 0%, 100% calc(100% - .35rem), calc(100% - .35rem) 100%, 0% 100%);
+    padding:            .2rem .35rem;
+}
+
+h1.cogi-uikit-header,
+h2.cogi-uikit-header,
+h3.cogi-uikit-header
+{
+    margin-top:         1rem;
+    margin-bottom:      1rem;
+}
+
+h1.cogi-uikit-header
+{
+    font-size:          1.5em;
+}
+
+h2.cogi-uikit-header
+{
+    font-size:          1.25em;
+}
+
+h3.cogi-uikit-header
+{
+    font-size:          1.1em;
+}

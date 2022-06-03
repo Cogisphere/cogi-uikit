@@ -8,6 +8,9 @@
     min-height:  1em;
     min-width:   1ch;
 
+    font-size:   .75em;
+    letter-spacing: 1px;
+
     text-transform: uppercase;
 }
 
