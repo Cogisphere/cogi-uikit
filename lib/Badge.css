@@ -1,7 +1,7 @@
 .cogi-uikit-badge
 {
     display:    inline-block;
-    background: black;
+    background: var(--cogi-uikit-color-dark);
     padding:    .10rem .25rem;
     padding-bottom:     .2rem;
     padding-right:      .5rem;
@@ -9,3 +9,11 @@
     color:      white;
     font-weight: bold;
 }
+
+.cogi-uikit-badge-color-dark { background-color: var(--cogi-uikit-color-dark); }
+.cogi-uikit-badge-color-red { background-color: var(--cogi-uikit-color-red); }
+.cogi-uikit-badge-color-blue { background-color: var(--cogi-uikit-color-blue); }
+.cogi-uikit-badge-color-green { background-color: var(--cogi-uikit-color-green); }
+.cogi-uikit-badge-color-orange { background-color: var(--cogi-uikit-color-orange); }
+.cogi-uikit-badge-color-yellow { background-color: var(--cogi-uikit-color-yellow); }
+.cogi-uikit-badge-color-purple { background-color: var(--cogi-uikit-color-purple); }
