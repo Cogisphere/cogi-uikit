@@ -1,0 +1,14 @@
+.cogi-uikit-card > header
+{
+    background-color:   var(--cogi-uikit-control-default);
+    color:              white;
+
+    clip-path:          polygon(0% 0%, calc(100% - .35rem) 0%, 100% .35rem, 100% 100%, 0% 100%);
+}
+
+.cogi-uikit-card > div,
+.cogi-uikit-card > header
+{
+    padding:    .2rem .5rem;
+    border:     1px solid var(--cogi-uikit-control-default);
+}
