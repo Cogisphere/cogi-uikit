@@ -1,13 +1,18 @@
 {
   "name": "cogi-uikit",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "prepare": "npm run build",
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
+  },
+  "peerDependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-scripts": "5.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
@@ -24,16 +29,18 @@
     "@storybook/testing-library": "^0.0.11",
     "@types/react": "^18.0.10",
     "babel-loader": "^8.2.5",
-    "postcss-modules": "^4.3.1",
+    "postcss": "^8.4.14",
+    "postcss-preset-env": "^7.7.0",
+    "postcss-value-parser": "^4.2.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "rollup": "^2.75.5",
     "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-exclude-dependencies-from-bundle": "^1.1.22",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-terser": "^7.0.2",
     "storybook-css-modules": "^1.0.7",
-    "typescript": "^4.7.2",
-    "typescript-plugin-css-modules": "^3.4.0"
+    "typescript": "^4.7.2"
   }
 }

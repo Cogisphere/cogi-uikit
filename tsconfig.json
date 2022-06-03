@@ -7,14 +7,19 @@
         "jsx": "react-jsx",
         "module": "ESNext",  
         "declaration": true,
-        "declarationDir": "types",
+        "declarationDir": ".",
         "sourceMap": true,
-        "outDir": "dist",
+        "outDir": "./dist",
         "moduleResolution": "node",
-        "emitDeclarationOnly": true,
         "allowSyntheticDefaultImports": true,
         "forceConsistentCasingInFileNames": true,
-        "plugins": [{ "name": "typescript-plugin-css-modules" }]
+        "resolveJsonModule": true,
+        "noEmit": true,
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
     },
     "exclude": [
         "dist",
@@ -23,7 +28,6 @@
         "lib/**/*.stories.tsx",
     ],
     "include": [
-        "declarations.d.ts",
         "lib/*"
     ]
   }

@@ -1,11 +1,11 @@
 import React from "react";
-import css from "./Badge.module.css";
+import "./Badge.css";
 /**
  *  A small component to show a badge with text.
  */
 export default function Badge(props: BadgeProps) {
     return (
-        <span className={css.badge}>{props.label}</span>
+        <span className="cogi-uikit-badge">{props.label}</span>
     );
 };
 
