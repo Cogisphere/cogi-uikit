@@ -2,12 +2,31 @@
 {
     display:    inline-block;
     background: var(--cogi-uikit-color-dark);
-    padding:    .10rem .25rem;
-    padding-bottom:     .2rem;
-    padding-right:      .5rem;
-    clip-path:          polygon(0% 0%, 100% 0%, 100% calc(100% - .35rem), calc(100% - .35rem) 100%, 0% 100%);
+    padding:    .2rem .35rem;
     color:      white;
     font-weight: bold;
+    min-height:  1em;
+    min-width:   1ch;
+
+    text-transform: uppercase;
+}
+
+.cogi-uikit-badge:last-of-type
+{
+    clip-path:      polygon(0% 0%, 100% 0%, 100% calc(100% - .35rem), calc(100% - .35rem) 100%, 0% 100%);
+    padding-right:      .5rem;
+}
+
+
+.cogi-uikit-badge:first-of-type:not(:last-of-type)
+{
+    clip-path:      polygon(.35rem 0%, 100% 0%, 100% 100%, 0% 100%, 0% .35rem); 
+    padding-left:       .5rem; 
+}
+
+.cogi-uikit-badge + .cogi-uikit-badge
+{
+    margin-left: .2rem;
 }
 
 .cogi-uikit-badge-color-dark { background-color: var(--cogi-uikit-color-dark); }

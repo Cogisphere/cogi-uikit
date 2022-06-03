@@ -1,10 +1,15 @@
 import { Color } from "Color";
-import React from "react";
 import "./Badge.css";
 /**
  *  A small component to show a badge with text inside. The badge can be used to
  *  create a tag, indicate some kind of status, or counter.
  */
+
+export interface BadgeProps {
+    label: string;
+    color?: Color;
+};
+
 export default function Badge(props: BadgeProps) {
 
     const styles = [
@@ -15,9 +20,4 @@ export default function Badge(props: BadgeProps) {
     return (
         <span className={styles.join(' ')}>{props.label}</span>
     );
-};
-
-export interface BadgeProps {
-    label: string;
-    color?: Color;
 };

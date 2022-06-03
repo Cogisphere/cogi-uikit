@@ -1,0 +1,30 @@
+.cogi-uikit-field > label
+{
+    font-size:      .75em;
+    opacity:        .8;
+    transition:     color .3s;
+}
+
+.cogi-uikit-field:focus-within > label
+{
+    opacity:        1;
+}
+
+.cogi-uikit-field > :is(input[type="text"], input[type="number"])
+{
+    display:        block;
+    background:     transparent;
+    border:         none;
+    border-bottom:  1px solid var(--cogi-uikit-control-default);
+    transition:     border-color .3s;
+    width:          100%;
+
+    caret-shape:    block;
+    caret-color:    var(--cogi-uikit-control-focus);
+}
+
+.cogi-uikit-field:focus-within > input
+{
+    outline:        none;
+    border-color:   var(--cogi-uikit-control-focus);
+}

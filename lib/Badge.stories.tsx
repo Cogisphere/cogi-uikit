@@ -15,3 +15,16 @@ export const Standalone = Template.bind({});
 Standalone.args = {
     label: 'Test label',
 };
+
+const LineTemplate: ComponentStory<typeof Badge> = (args) => <>
+    <Badge {...args} />
+    <Badge {...args} />
+    <Badge {...args} />
+    <Badge {...args} />
+</>;
+
+export const Line = LineTemplate.bind({});
+
+LineTemplate.args = {
+    label: 'Badge'
+};

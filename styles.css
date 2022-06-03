@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+html
+{
+    font-family: "Share Tech Mono";
+    background: #F7F7FF;
+}
+
 :root
 {
     --cogi-uikit-color-dark:  #161616;
@@ -7,4 +15,7 @@
     --cogi-uikit-color-orange: #FF570A;
     --cogi-uikit-color-yellow: #FFD449;
     --cogi-uikit-color-purple: #9B97B2;
+
+    --cogi-uikit-control-focus: #FF570A;
+    --cogi-uikit-control-default: #161616;
 }
