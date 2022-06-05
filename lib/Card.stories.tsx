@@ -15,3 +15,18 @@ export const Standalone = Template.bind({});
 Standalone.args = {
     title: 'Card title',
 };
+
+export const Image = Template.bind({});
+
+Image.args = {
+    title: 'Card title',
+    image: 'https://www.google.com'
+};
+
+export const Action = Template.bind({});
+
+Action.args = {
+    title: 'Card title',
+    actionTitle: 'Click me',
+    onAction: () => alert("Clicked")
+};

@@ -2,13 +2,76 @@
 {
     background-color:   var(--cogi-uikit-control-default);
     color:              white;
-
     clip-path:          polygon(0% 0%, calc(100% - .35rem) 0%, 100% .35rem, 100% 100%, 0% 100%);
+    position:           relative;
 }
 
+.cogi-uikit-card > header > button
+{
+    position:   absolute;
+    top:        0;
+    bottom:     0;
+    right:      0;
+    box-sizing: content-box;
+    padding:    .2rem .5rem;
+    background: var(--cogi-uikit-control-action);
+    font-weight: bold;
+    font-family: inherit;
+    display:    block;
+    clip-path:  polygon(0% 0%, calc(100% - .5rem) 0%, 100% .5rem, 100% 100%, 0% 100%);
+}
+
+/* make sure border and spacing insid the card is the same for header and main content */
 .cogi-uikit-card > div,
 .cogi-uikit-card > header
 {
     padding:    .2rem .5rem;
     border:     1px solid var(--cogi-uikit-control-default);
+    transition: margin-left .3s;
 }
+
+.cogi-uikit-card > div
+{
+    background: white;
+}
+
+/* if we have an image we place as absolute containter on the right */
+.cogi-uikit-card
+{
+    position:   relative;
+    z-index:    0;
+}
+
+/* the image needs to be contained inside a special div. This way we can control
+the size of the image with the div and make sure that IMG tag inside will always
+match the div. */
+.cogi-uikit-card > .cogi-uikit-card-image
+{
+    padding:    0;
+    position:   absolute;
+    top:        0;
+    bottom:     0;
+    z-index:    1;
+    overflow:   hidden;
+    background: white;
+
+    transition: width .3s;
+}
+
+/* different sizes of image that can be applied on the card */
+.cogi-uikit-card > .cogi-uikit-card-image-small { width: 6rem; }
+.cogi-uikit-card > .cogi-uikit-card-image-medium { width: 12rem; }
+.cogi-uikit-card > .cogi-uikit-card-image-large { width: 15rem; }
+
+/* the image of the card. we want it on the left of the card spanning the whole card */
+.cogi-uikit-card > .cogi-uikit-card-image > img
+{
+    width:      100%;
+    height:     100%;
+    object-fit: cover;
+}
+
+/* make sure to move header and main content of the card when we have an image */
+.cogi-uikit-card > .cogi-uikit-card-image-small ~ :where(header, div) { margin-left: 6rem; }
+.cogi-uikit-card > .cogi-uikit-card-image-medium ~ :where(header, div) { margin-left: 12rem; }
+.cogi-uikit-card > .cogi-uikit-card-image-large ~ :where(header, div) { margin-left: 15rem; }
