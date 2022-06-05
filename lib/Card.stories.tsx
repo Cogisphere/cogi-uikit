@@ -27,6 +27,14 @@ export const Action = Template.bind({});
 
 Action.args = {
     title: 'Card title',
-    actionTitle: 'Click me',
-    onAction: () => alert("Clicked")
+    actionTitle: 'Click me'
 };
+
+export const Selectable = Template.bind({});
+
+Selectable.args = {
+    title: 'Card title',
+    selected: true,
+    selectable: true,
+    actionTitle: 'Click me'
+}

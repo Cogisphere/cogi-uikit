@@ -4,3 +4,4 @@ export { default as Field, FieldProps } from "./Field";
 export { default as Header, HeaderProps } from "./Header";
 export { default as Card, CardProps } from "./Card";
 export { Color } from "./Color";
+export { SelectableUIProps } from "./SelectableUI";

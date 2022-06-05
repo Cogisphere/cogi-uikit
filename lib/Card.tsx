@@ -1,7 +1,8 @@
-import { ReactNode } from "react";
+import React, { ReactNode, useEffect, useState } from "react";
+import { SelectableUIProps } from "SelectableUI";
 import "./Card.css";
 
-export interface CardProps {
+export interface CardProps extends SelectableUIProps {
 
     /**
      *  The title of the card. It will be placed on the top of the card.
@@ -41,16 +42,47 @@ export default function Card(props: CardProps) {
         imageAlt,
         actionTitle,
         onAction,
+        selected,
+        selectable,
+        onSelected, 
+        onDeselected,
         children
     } = props;
 
+    const [ active, setActive ] = useState<boolean>(false);
+
+    const onCardClick = (e:React.MouseEvent) => {
+
+        // if the click happens in a button or similar control element, we don't
+        // want to handle it as select action.
+        if ((e.target as HTMLElement).closest('button, input, select, textarea')) return;
+
+        if (active) setActive(false);
+        else setActive(true);
+
+        if (active) onDeselected?.();
+        else onSelected?.();
+    };
+
+    useEffect(() => {
+
+        if (!selectable || selected === undefined) return;
+
+        setActive(selected);
+
+    }, [ selected, selectable ]);
+
+    const css = ['cogi-uikit-card' ];
+    if (active) css.push('cogi-uikit-card-active');
+
     return (
-        <div className="cogi-uikit-card">
+        <div className={css.join(' ')} onClick={selectable ? onCardClick : () => {}}>
             {image && <div className={['cogi-uikit-card-image', `cogi-uikit-card-image-${props.imageSize || "medium"}`].join(' ')}>
                 <img src={image} alt={imageAlt || ''}/>
             </div>}
             {title && <header>
                 {title}
+                {selectable && <span className="cogi-uikit-card-selector"/>}
                 {actionTitle && onAction && <button onClick={() => onAction()}>{actionTitle}</button>}
             </header>}
             <div>{children}</div>

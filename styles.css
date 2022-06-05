@@ -19,4 +19,5 @@ html
     --cogi-uikit-control-focus: var(--cogi-uikit-color-orange);
     --cogi-uikit-control-default: var(--cogi-uikit-color-dark);
     --cogi-uikit-control-action: var(--cogi-uikit-color-yellow);
+    --cogi-uikit-control-active: var(--cogi-uikit-color-blue);
 }

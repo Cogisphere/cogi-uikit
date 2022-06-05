@@ -75,3 +75,13 @@ match the div. */
 .cogi-uikit-card > .cogi-uikit-card-image-small ~ :where(header, div) { margin-left: 6rem; }
 .cogi-uikit-card > .cogi-uikit-card-image-medium ~ :where(header, div) { margin-left: 12rem; }
 .cogi-uikit-card > .cogi-uikit-card-image-large ~ :where(header, div) { margin-left: 15rem; }
+
+.cogi-uikit-card.cogi-uikit-card-active > :where(div, header)
+{
+    border-color:   var(--cogi-uikit-control-active);
+}
+
+.cogi-uikit-card > .cogi-uikit-card-selector
+{
+    width:  3rem;
+}
