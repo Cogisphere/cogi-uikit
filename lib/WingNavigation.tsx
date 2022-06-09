@@ -32,7 +32,9 @@ function NavigationWing({ items, type } : { items: NavigationItem[], type:'left'
 
 function NavigationCenter() {
     return (
-        <div className="cogi-uikit-wingnavigation-center"></div> 
+        <div className="cogi-uikit-wingnavigation-center">
+            #CogiSphere::
+        </div> 
     );
 };
 

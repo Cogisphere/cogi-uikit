@@ -29,9 +29,17 @@
 .cogi-uikit-wingnavigation-center
 {
     width:      200px;
-    height:     3em;
+    height:     2em;
     background-color: var(--cogi-uikit-control-default);
     clip-path:  polygon(0% 0%, 100% 0%, 100% calc(100% - .35rem), calc(100% - .35rem) 100%, .35rem 100%, 0% calc(100% - .35rem));
+
+    color:      white;
+    text-align: center;
+    padding-top: .75rem;
+    padding-bottom: .5rem;
+    box-sizing: border-box;
+    font-size:  1.3em;
+    font-weight: bold;
 }
 
 .cogi-uikit-wingnavigation-link
