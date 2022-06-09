@@ -1,0 +1,6 @@
+.cogi-uikit-listing
+{
+    display:        grid;
+    grid-auto-flow: row;
+    row-gap:        1em;
+}

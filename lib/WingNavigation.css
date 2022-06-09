@@ -1,0 +1,53 @@
+.cogi-uikit-wingnavigation
+{
+    display:    grid;
+    width:      100%;
+    position:   sticky;
+    top:        0;
+    grid-template-columns: 1fr auto 1fr;
+    gap:        1px;
+}
+
+.cogi-uikit-wingnavigation-wing
+{
+    display:    grid;
+    grid-auto-flow: column;
+    gap:        1px;
+    align-content: start;
+}
+
+.cogi-uikit-wingnavigation-wing.cogi-uikit-wingnavigation-wing-left > .cogi-uikit-wingnavigation-link:first-of-type
+{
+    clip-path:  polygon(0% 0%, 100% 0%, 100% 100%, .35rem 100%, 0% calc(100% - .35rem));
+}
+
+.cogi-uikit-wingnavigation-wing.cogi-uikit-wingnavigation-wing-right > .cogi-uikit-wingnavigation-link:last-of-type
+{
+    clip-path:  polygon(0% 0%, 100% 0%, 100% calc(100% - .35rem), calc(100% - .35rem) 100%, 0% 100%);
+}
+
+.cogi-uikit-wingnavigation-center
+{
+    width:      200px;
+    height:     3em;
+    background-color: var(--cogi-uikit-control-default);
+    clip-path:  polygon(0% 0%, 100% 0%, 100% calc(100% - .35rem), calc(100% - .35rem) 100%, .35rem 100%, 0% calc(100% - .35rem));
+}
+
+.cogi-uikit-wingnavigation-link
+{
+    padding:    .1rem 1.5rem;
+    color:      var(--cogi-uikit-background);
+    background: var(--cogi-uikit-control-default);
+    border:     1px solid var(--cogi-uikit-background);
+
+    text-align: center;
+
+    transition: .3s background;
+}
+
+.cogi-uikit-wingnavigation-link:hover
+{
+    cursor:     pointer;
+    background: var(--cogi-uikit-control-action);
+}

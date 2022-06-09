@@ -3,11 +3,13 @@
 html
 {
     font-family: "Share Tech Mono";
-    background: #F7F7FF;
+    background: var(--cogi-uikit-background);
 }
 
 :root
 {
+    --cogi-uikit-background: #f7f7ff;
+
     --cogi-uikit-color-dark:  #262626;
     --cogi-uikit-color-red: #D72638dd;
     --cogi-uikit-color-blue: #028090;
