@@ -1,3 +1,9 @@
+.cogi-uikit-field
+{
+    margin-top:     .5rem;
+    margin-bottom:  .5rem;
+}
+
 .cogi-uikit-field > label
 {
     font-size:      .75em;
@@ -23,7 +29,29 @@
     caret-color:    var(--cogi-uikit-control-focus);
 }
 
-.cogi-uikit-field:focus-within > input
+.cogi-uikit-field > select
+{
+    display:        block;
+    background:     transparent;
+    border:         1px solid var(--cogi-uikit-control-default);
+    transition:     border-color .3s;
+    width:          100%;
+
+    caret-color:    var(--cogi-uikit-control-focus);
+}
+
+.cogi-uikit-field > textarea
+{
+    display:        block;
+    background:     transparent;
+    border:         1px solid var(--cogi-uikit-control-default);
+    transition:     border-color .3s;
+    width:          100%;
+
+    caret-color:    var(--cogi-uikit-control-focus);
+}
+
+.cogi-uikit-field:focus-within > :is(input, textarea)
 {
     outline:        none;
     border-color:   var(--cogi-uikit-control-focus);
