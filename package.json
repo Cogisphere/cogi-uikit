@@ -1,6 +1,6 @@
 {
   "name": "@cogisphere/cogi-uikit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -16,7 +16,7 @@
   "peerDependencies": {
     "react": "^18.1.0 || ^17.0.2",
     "react-dom": "^18.1.0 || ^17.0.2",
-    "react-scripts": "5.0.0 || ^4.0.3"
+    "react-scripts": "^5.0.0 || ^4.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
