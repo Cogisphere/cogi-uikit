@@ -13,6 +13,7 @@ export * from "./Footer";
 export * from "./Header";
 export * from "./Listing";
 export * from "./Section";
+export * from "./VersionList";
 export * from "./WingNavigation";
 export { Color } from "./Color";
 export { SelectableUIProps } from "./SelectableUI";

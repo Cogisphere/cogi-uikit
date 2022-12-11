@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { WingNavigation, Footer, AppFrame, Header } from "../index";
+import { WingNavigation, Footer, AppFrame, Header, VersionList } from "../index";
 
 
 function SimplePage() {
@@ -11,7 +11,10 @@ function SimplePage() {
     />);
 
     const bottom = (<Footer>
-        Version: 1.0.0
+        <VersionList versions={{
+            "package-one": "1.0.3",
+            "package-two": "2.0.5"    
+        }}/>
     </Footer>);
 
     return (

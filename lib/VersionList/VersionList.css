@@ -1,0 +1,10 @@
+.cogi-uikit-versionlist
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.cogi-uikit-versionlist-line > span
+{
+    opacity: 60%;
+}

@@ -1,5 +1,7 @@
 .cogi-uikit-footer
 {
-    background: var(--cogi-uikit-color-dark);
-    color: var(--cogi-uikit-color-light);
+    padding:            .2rem .35rem;
+    background:         var(--cogi-uikit-color-dark);
+    color:              var(--cogi-uikit-color-light);
+    font-size:          9pt;
 }
