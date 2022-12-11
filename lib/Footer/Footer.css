@@ -1,7 +1,19 @@
 .cogi-uikit-footer
 {
     padding:            .2rem .35rem;
+    padding-top:        16px;
     background:         var(--cogi-uikit-color-dark);
     color:              var(--cogi-uikit-color-light);
     font-size:          9pt;
+
+    clip-path:          polygon(
+                            0px 0px,
+                            64px 0px,
+                            calc(64px + 8px) 8px,
+                            calc(100% - (64px + 8px)) 8px,
+                            calc(100% - 64px) 0px,
+                            100% 0px,
+                            100% 100%,
+                            0px 100%
+                        );
 }

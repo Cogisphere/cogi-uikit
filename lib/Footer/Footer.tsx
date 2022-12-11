@@ -7,7 +7,7 @@ export interface FooterProps {
 
 export function Footer({children}: FooterProps) {
     return (
-        <footer className="cogi-uikit-footer">
+        <footer className="cogi-uikit-footer uikit-styles-interlace">
             {children}
         </footer>
     );

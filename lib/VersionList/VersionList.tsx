@@ -13,7 +13,7 @@ function VersionLine({ name, version }: { name: string, version: string }) {
     return (
         <div className="cogi-uikit-versionlist-line">
             <span>{'>> [ '}</span>
-            <code>{name}</code>
+            <code>{name}</code> 
             <span>{'::'}</span>
             <code>{version}</code>
             <span>{' ]'}</span>
