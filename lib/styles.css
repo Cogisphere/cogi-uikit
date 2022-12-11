@@ -6,16 +6,24 @@ html
     background: var(--cogi-uikit-background);
 }
 
+html, body
+{
+    padding: 0;
+    margin: 0;
+}
+
 :root
 {
     --cogi-uikit-background: #f7f7ff;
 
+    --cogi-uikit-color-light: #f7f7ff;
     --cogi-uikit-color-dark:  #262626;
     --cogi-uikit-color-red: #D72638dd;
     --cogi-uikit-color-blue: #028090;
     --cogi-uikit-color-green: #80AB82;
     --cogi-uikit-color-orange: #FF570A;
     --cogi-uikit-color-yellow: #FFD449;
+    --cogi-uikit-color-ochre: #dbae03;
     --cogi-uikit-color-purple: #9B97B2;
 
     --cogi-uikit-control-focus: var(--cogi-uikit-color-orange);

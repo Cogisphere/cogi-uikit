@@ -5,7 +5,7 @@ export interface ListingProps {
     children: ReactNode;
 };
 
-export default function Listing(props:ListingProps) {
+export function Listing(props:ListingProps) {
     return (
         <div className="cogi-uikit-listing">
             {props.children}

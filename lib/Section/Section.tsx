@@ -4,7 +4,7 @@ export interface SectionProps {
     children: ReactNode;
 };
 
-export default function Section({ children } : SectionProps) {
+export function Section({ children } : SectionProps) {
 
     return (
         <section className="cogi-uikit-section">

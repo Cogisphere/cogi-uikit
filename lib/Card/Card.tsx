@@ -1,5 +1,5 @@
 import React, { ReactNode, useEffect, useState } from "react";
-import { SelectableUIProps } from "SelectableUI";
+import { SelectableUIProps } from "../SelectableUI";
 import "./Card.css";
 
 export interface CardProps extends SelectableUIProps {
@@ -34,7 +34,7 @@ export interface CardProps extends SelectableUIProps {
     children: ReactNode;
 };
 
-export default function Card(props: CardProps) {
+export function Card(props: CardProps) {
 
     const {
         title,

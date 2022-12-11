@@ -38,7 +38,7 @@ function NavigationCenter() {
     );
 };
 
-export default function WingNavigation(props: WingNavigationProps) {
+export function WingNavigation(props: WingNavigationProps) {
     return (
         <nav className="cogi-uikit-wingnavigation">
             <NavigationWing type="left" items={props.left || []}/>

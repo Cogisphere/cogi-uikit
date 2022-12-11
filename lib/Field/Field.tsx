@@ -11,7 +11,7 @@ export interface FieldProps {
     children: ReactNode;
 };
 
-export default function Field(props: FieldProps) {
+export function Field(props: FieldProps) {
     return (
         <div className="cogi-uikit-field">
             {props.label && <label>{props.label}</label>}

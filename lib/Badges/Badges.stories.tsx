@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Badges from './Badges';
+import { Badges } from '../index';
 
 export default {
     title: 'Badges',

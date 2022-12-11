@@ -1,7 +1,11 @@
+:root {
+    --cogi-uikit-header-background: var(--cogi-uikit-color-dark);
+}
+
 h1.cogi-uikit-header,
 h2.cogi-uikit-header
 {
-    background-color:   var(--cogi-uikit-color-dark);
+    background-color:   var(--cogi-uikit-header-background);
     color:              white;
     clip-path:          polygon(0% 0%, 100% 0%, 100% calc(100% - .35rem), calc(100% - .35rem) 100%, 0% 100%);
     padding:            .2rem .35rem;

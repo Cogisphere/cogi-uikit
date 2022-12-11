@@ -5,7 +5,7 @@ export interface HeaderProps {
     level?: 1|2|3;
 };
 
-export default function Header({ title, level }:HeaderProps) {
+export function Header({ title, level }:HeaderProps) {
 
     const actualLevel = level || 1;
 
