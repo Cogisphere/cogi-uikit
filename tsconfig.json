@@ -29,5 +29,5 @@
     ],
     "include": [
         "lib/*"
-    ]
+, "lib/AppFrame/AppFrame.tsx"    ]
   }

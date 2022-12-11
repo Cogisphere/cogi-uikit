@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import WingNavigation from './WingNavigation';
+import { WingNavigation } from './index';
 
 export default {
     title: 'WingNavigation',

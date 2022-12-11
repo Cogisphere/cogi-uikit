@@ -1,8 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Section from "./Section";
-import Header from './Header';
-import Field from './Field';
+import { Section, Header, Field } from "../index";
 
 export default {
     title: 'Section',

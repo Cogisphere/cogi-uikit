@@ -1,4 +1,4 @@
-import { Color } from "Color";
+import { Color } from "../Color";
 import "./Badge.css";
 /**
  *  A small component to show a badge with text inside. The badge can be used to
@@ -10,7 +10,7 @@ export interface BadgeProps {
     color?: Color;
 };
 
-export default function Badge(props: BadgeProps) {
+export function Badge(props: BadgeProps) {
 
     const styles = [
         "cogi-uikit-badge",
