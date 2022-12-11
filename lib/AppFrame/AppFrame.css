@@ -1,4 +1,19 @@
 .cogi-uikit-appframe
 {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cogi-uikit-appframe > *
+{
+    flex-basis: fit-content;
+    flex-grow: 1;
+}
+
+.cogi-uikit-appframe > .cogi-uikit-appframe-top,
+.cogi-uikit-appframe > .cogi-uikit-appframe-bottom
+{
+    flex-basis: min-content;
+    flex-grow: 0;
 }
