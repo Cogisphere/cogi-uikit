@@ -14,12 +14,14 @@
     "dist"
   ],
   "peerDependencies": {
-    "react": "^18.1.0 || ^17.0.2",
-    "react-dom": "^18.1.0 || ^17.0.2",
-    "react-scripts": "^5.0.0 || ^4.0.3"
+    "@cogisphere/cogi-uikit": "^1.0.0 ",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-scripts": "^5.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
+    "@cogisphere/cogi-colors": "^1.0.1",
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.2",

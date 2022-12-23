@@ -1,0 +1,39 @@
+.cogi-uikit-paintcard
+{
+    height:     100px;
+    width:      220px;
+
+    background: black;
+    clip-path:  polygon(
+                    .35rem 0%, 
+                    100% 0%, 
+                    100% calc(100% - .35rem), 
+                    calc(100% - .35rem) 100%, 
+                    0% 100%,
+                    0% .35rem
+                );
+
+    display:    grid;
+    grid-template-rows: min-content auto;
+}
+
+.cogi-uikit-paintcard-label
+{
+    display:    block;
+    color:      white;
+    padding:    .2rem .35rem;
+}
+
+.cogi-uikit-paintcard-color
+{
+    clip-path:  polygon(
+                    0% .35rem,
+                    .35rem 0%,
+                    100% 0%,
+                    100% calc(100% - .35rem - 1px),
+                    calc(100% - .35rem - 1px)
+                    100%, 
+                    0% 100%
+                );
+    border: 1px solid black;
+}

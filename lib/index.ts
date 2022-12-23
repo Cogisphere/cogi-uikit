@@ -15,5 +15,7 @@ export * from "./Listing";
 export * from "./Section";
 export * from "./VersionList";
 export * from "./WingNavigation";
+export * from "./PaintCard";
+export * from "./GridListing";
 export { Color } from "./Color";
 export { SelectableUIProps } from "./SelectableUI";

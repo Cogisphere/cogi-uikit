@@ -1,0 +1,19 @@
+.cogi-uikit-gridlisting
+{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, 220px); */
+
+    display: flex;
+
+    column-gap: .2rem;
+    row-gap: .35rem;
+
+    flex-wrap: wrap;
+}
+
+.cogi-uikit-gridlisting > *
+{
+    flex-basis: 220px;
+    flex-grow: 1;
+
+}

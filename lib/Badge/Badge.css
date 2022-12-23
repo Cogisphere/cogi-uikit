@@ -7,7 +7,7 @@
     font-weight: bold;
     min-height:  1em;
     min-width:   1ch;
-
+    
     font-size:   .75em;
     letter-spacing: 1px;
 
@@ -17,14 +17,14 @@
 .cogi-uikit-badge:last-of-type
 {
     clip-path:      polygon(0% 0%, 100% 0%, 100% calc(100% - .35rem), calc(100% - .35rem) 100%, 0% 100%);
-    padding-right:      .5rem;
+    padding-right:  .5rem;
 }
 
 
 .cogi-uikit-badge:first-of-type:not(:last-of-type)
 {
     clip-path:      polygon(.35rem 0%, 100% 0%, 100% 100%, 0% 100%, 0% .35rem); 
-    padding-left:       .5rem; 
+    padding-left:   .5rem; 
 }
 
 .cogi-uikit-badge + .cogi-uikit-badge
