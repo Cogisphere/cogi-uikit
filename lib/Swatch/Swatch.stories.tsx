@@ -25,3 +25,15 @@ Filled.args = {
         new Color('#F45D4C')
     ]
 };
+
+export const Controls = Template.bind({ });
+Controls.args = {
+    colors: [
+        new Color('#FABF71'),
+        new Color('#FF9C2F'),
+        new Color('#FE701A'),
+        new Color('#BD2D15'),
+        new Color('#651A05'),
+    ],
+    controls: true
+};
