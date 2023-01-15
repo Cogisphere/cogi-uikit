@@ -28,6 +28,7 @@ export function SwatchColor({ controls, color }: SwatchColorProps) {
     return (
         <div className="cogi-uikit-swatchcolor">
             <div className="cogi-uikit-swatchcolor-color" style={{ backgroundColor: actualColor.toHex() }}></div>
+            {controls && (<div className="cogi-uikit-swatchcolor-controls">{controls}</div>)}
         </div>
     );
 };

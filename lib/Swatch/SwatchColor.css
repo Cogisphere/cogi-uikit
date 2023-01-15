@@ -12,3 +12,23 @@
     left: 0;
     right: 0;
 }
+
+.cogi-uikit-swatchcolor-controls
+{
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    transition: opacity .2s;
+}
+
+.cogi-uikit-swatchcolor .cogi-uikit-swatchcolor-controls {
+
+    opacity: 0%;
+}
+
+.cogi-uikit-swatchcolor:hover .cogi-uikit-swatchcolor-controls {
+
+    opacity: 100%;
+}
