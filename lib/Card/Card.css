@@ -25,7 +25,7 @@
 .cogi-uikit-card > div,
 .cogi-uikit-card > header
 {
-    padding:    .2rem .5rem;
+    padding:    var(--cogi-uikit-box-padding);
     border:     1px solid var(--cogi-uikit-control-default);
     transition: margin-left .3s;
 }
