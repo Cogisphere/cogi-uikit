@@ -31,4 +31,6 @@ html, body
     --cogi-uikit-control-default: var(--cogi-uikit-color-dark);
     --cogi-uikit-control-action: var(--cogi-uikit-color-ochre);
     --cogi-uikit-control-active: var(--cogi-uikit-color-blue);
+
+    --cogi-uikit-box-padding: .2rem .5rem;
 }

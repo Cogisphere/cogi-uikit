@@ -13,6 +13,8 @@ export * from "./Footer";
 export * from "./Header";
 export * from "./Listing";
 export * from "./Section";
+export * from "./Shelf";
+export * from "./Swatch";
 export * from "./VersionList";
 export * from "./WingNavigation";
 export * from "./PaintCard";

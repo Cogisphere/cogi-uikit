@@ -1,0 +1,13 @@
+.cogi-uikit-shelf
+{
+    position: absolute;
+    bottom: .25rem;
+    left: 1rem;
+    right: 1rem;
+
+    background-color: var(--cogi-uikit-background);
+
+    border: 1px solid var(--cogi-uikit-color-dark);
+
+    padding: var(--cogi-uikit-box-padding);
+}
