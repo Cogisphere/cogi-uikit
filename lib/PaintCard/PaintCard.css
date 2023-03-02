@@ -36,4 +36,15 @@
                     0% 100%
                 );
     border: 1px solid black;
+
+    position:   relative;
+}
+
+.cogi-uikit-paintcard-controls
+{
+    position:   absolute;
+    top:        50%;
+    left:       1rem;
+    right:      1rem;
+    transform:  translateY(-50%);
 }

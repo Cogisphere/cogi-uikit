@@ -1,5 +1,11 @@
 # Changelog
 
+# [1.0.11]
+
+- Added Icon component
+- Added ContextualControls component
+- Changed how controls work in PaintCard
+
 # [1.0.6]
 
 - Added PaintCard component

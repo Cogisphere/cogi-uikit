@@ -10,19 +10,21 @@ export interface PaintCardProps {
     paint: Paint;
 
     /**
-     *  A callback triggered when user clicks on a paint card.
+     *  A possible controls that can be overlaid over the paint card.
      */
-    onClick?: (paint: Paint) => void;
+    controls: React.ReactNode;
 };
 
 /**
  *  This is a component that renders a small card with the paint
  *  color and name.
  */
-export function PaintCard({ paint, onClick }: PaintCardProps) {
+export function PaintCard({ paint, controls }: PaintCardProps) {
 
-    return (<div className="cogi-uikit-paintcard" onClick={() => onClick?.(paint) }>
+    return (<div className="cogi-uikit-paintcard">
         <span className="cogi-uikit-paintcard-label">{paint.name}</span>
-        <div className="cogi-uikit-paintcard-color" style={{ backgroundColor: paint.color.toHex() }}></div>
+        <div className="cogi-uikit-paintcard-color" style={{ backgroundColor: paint.color.toHex() }}>
+            {controls && (<div className="cogi-uikit-paintcard-controls">{controls}</div>)}
+        </div>
     </div>);
 };

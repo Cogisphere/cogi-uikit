@@ -1,0 +1,12 @@
+.cogi-uikit-contextualcontrols-item
+{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1ch;
+    justify-content: center;
+
+    color: var(--cogi-uikit-color-light);
+    background: var(--cogi-uikit-color-dark);
+
+    cursor: pointer;
+}
